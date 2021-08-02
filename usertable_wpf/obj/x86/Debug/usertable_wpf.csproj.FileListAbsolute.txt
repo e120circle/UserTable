@@ -1,0 +1,122 @@
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\usertable_wpf.pdb
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\digital.baml
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\feed1_1.baml
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\mach_coord.baml
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\main_window.baml
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\prog_coord.baml
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\cycletime.g.cs
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\digital.g.cs
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\feed1_1.g.cs
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\mach_coord.g.cs
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\main_window.g.cs
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\prog_coord.g.cs
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\time.g.cs
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\usertable_wpf_MarkupCompile.cache
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\usertable_wpf_MarkupCompile.lref
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\usertable_wpf.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\usertable_wpf.pdb
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\ds_API_SqlClass.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\Microsoft.Expression.Drawing.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\Microsoft.Expression.Interactions.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\MySql.Data.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\NCLinker.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\NCLinker2.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\System.Windows.Interactivity.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\Microsoft.Expression.Drawing.xml
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\Microsoft.Expression.Interactions.xml
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\System.Windows.Interactivity.xml
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\de\Microsoft.Expression.Interactions.resources.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\en\Microsoft.Expression.Interactions.resources.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\es\Microsoft.Expression.Interactions.resources.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\it\Microsoft.Expression.Interactions.resources.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\de\System.Windows.Interactivity.resources.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\en\System.Windows.Interactivity.resources.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\es\System.Windows.Interactivity.resources.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\fr\System.Windows.Interactivity.resources.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\it\System.Windows.Interactivity.resources.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\ja\System.Windows.Interactivity.resources.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\ko\System.Windows.Interactivity.resources.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\cycletime.baml
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\time.baml
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\usertable_wpf.g.resources
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\usertable_wpf.coord1_3.resources
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\usertable_wpf.feed1_1.resources
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\usertable_wpf.Properties.Resources.resources
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\usertable_wpf.usertable.resources
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\usertable_wpf.csproj.GenerateResource.Cache
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\usertable_wpf.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\bin\x86\Debug\Bugatti.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\ACHead.baml
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\ACHead.g.cs
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\usertable_wpf.csprojAssemblyReference.cache
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\usertable_wpf.csproj.CoreCompileInputs.cache
+D:\Hartford\2017自訂桌面\usertable\usertable_wpf\obj\x86\Debug\usertable_wpf.csproj.CopyComplete
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\usertable_wpf.dll
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\usertable_wpf.pdb
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\Bugatti.dll
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\ds_API_SqlClass.dll
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\Microsoft.Expression.Drawing.dll
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\Microsoft.Expression.Interactions.dll
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\MySql.Data.dll
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\NCLinker.dll
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\NCLinker2.dll
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\System.Windows.Interactivity.dll
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\Microsoft.Expression.Drawing.xml
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\Microsoft.Expression.Interactions.xml
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\System.Windows.Interactivity.xml
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\de\Microsoft.Expression.Interactions.resources.dll
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\en\Microsoft.Expression.Interactions.resources.dll
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\es\Microsoft.Expression.Interactions.resources.dll
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\it\Microsoft.Expression.Interactions.resources.dll
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\de\System.Windows.Interactivity.resources.dll
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\en\System.Windows.Interactivity.resources.dll
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\es\System.Windows.Interactivity.resources.dll
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\fr\System.Windows.Interactivity.resources.dll
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\it\System.Windows.Interactivity.resources.dll
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\ja\System.Windows.Interactivity.resources.dll
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\ko\System.Windows.Interactivity.resources.dll
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\bin\x86\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\usertable_wpf.csprojAssemblyReference.cache
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\ACHead.baml
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\digital.baml
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\feed1_1.baml
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\mach_coord.baml
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\main_window.baml
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\prog_coord.baml
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\ACHead.g.cs
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\cycletime.g.cs
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\digital.g.cs
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\feed1_1.g.cs
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\mach_coord.g.cs
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\main_window.g.cs
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\prog_coord.g.cs
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\time.g.cs
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\usertable_wpf_MarkupCompile.cache
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\usertable_wpf_MarkupCompile.lref
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\cycletime.baml
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\View\time.baml
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\usertable_wpf.g.resources
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\usertable_wpf.coord1_3.resources
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\usertable_wpf.feed1_1.resources
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\usertable_wpf.Properties.Resources.resources
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\usertable_wpf.usertable.resources
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\usertable_wpf.csproj.GenerateResource.cache
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\usertable_wpf.csproj.CoreCompileInputs.cache
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\usertable_wpf.csproj.CopyComplete
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\usertable_wpf.dll
+D:\Hartford\2017 自訂桌面\usertable\usertable_wpf\obj\x86\Debug\usertable_wpf.pdb

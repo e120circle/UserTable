@@ -1,0 +1,581 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:express="http://schemas.microsoft.com/expression/2010/interactions"    
+             xmlns:message="clr-namespace:Bugatti.MessageBoxView.View;assembly=Bugatti"
+                x:Class="usertable_wpf.UserControl1"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300" Width="1024" Height="658">
+    <Grid Background="#FFCCCCCC" TextElement.FontFamily="{Binding Font}">        
+        <Grid Width="1024" Height="658">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="0.15*"/>
+            </Grid.RowDefinitions>
+            <Canvas Width="1024" Grid.Row="0" Background="Black" Visibility="{Binding Set_scr_vis}" Grid.RowSpan="2" Margin="-102,13,102,7" d:IsHidden="True">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="MouseUp">
+                        <express:CallMethodAction TargetObject="{Binding}" MethodName="move_up"/>
+                    </i:EventTrigger>
+                    <i:EventTrigger EventName="MouseMove">
+                        <express:CallMethodAction TargetObject="{Binding}" MethodName="move_move"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+                <Canvas.LayoutTransform>
+                    <ScaleTransform ScaleX="0.75"/>
+                </Canvas.LayoutTransform>
+                <Grid Height="638">
+                    <ItemsControl ItemsSource="{Binding Table}" AlternationCount="1" HorizontalAlignment="Left">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <Canvas/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Width="1024" Height="638" ShowGridLines="True">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid Grid.Column="{Binding col, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="{Binding row, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="{Binding title_width}" Grid.ColumnSpan="{Binding colspan}" Grid.RowSpan="{Binding rowspan}">
+                                        <i:Interaction.Triggers>
+                                            <i:EventTrigger EventName="MouseUp">
+                                                <express:CallMethodAction TargetObject="{Binding}" MethodName="mouse_up"/>
+                                            </i:EventTrigger>
+                                        </i:Interaction.Triggers>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <Border Width="{Binding title_width}" Uid="{Binding item_uid}" Height="25.36" CornerRadius="8,8,0,0" Background="#FF931473" Margin="0,6,0,0">
+                                            <i:Interaction.Triggers>
+                                                <i:EventTrigger EventName="MouseDown">
+                                                    <express:CallMethodAction TargetObject="{Binding}" MethodName="mouse_down"/>
+                                                </i:EventTrigger>
+                                            </i:Interaction.Triggers>
+                                            <StackPanel Orientation="Horizontal" Grid.Row="0" Width="{Binding title_width}" Height="25.36">
+                                                <Grid Width="{Binding title_width}" >
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="9.8*"/>
+                                                        <ColumnDefinition Width="Auto"/>
+                                                    </Grid.ColumnDefinitions>
+                                                    <Label Content="{Binding item_title}"  Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14" Padding="0" Foreground="White"/>
+                                                    <Image Grid.Column="1" Source="/usertable_wpf;component/Resources/close.png" Stretch="Fill" Width="20" Height="20" Uid="{Binding item_uid}" Visibility="{Binding Set_vis}">
+                                                        <i:Interaction.Triggers>
+                                                            <i:EventTrigger EventName="MouseUp">
+                                                                <express:CallMethodAction TargetObject="{Binding}" MethodName="click_in_item"/>
+                                                            </i:EventTrigger>
+                                                        </i:Interaction.Triggers>
+                                                    </Image>
+                                                </Grid>
+                                            </StackPanel>
+                                        </Border>
+                                        <Border Uid="{Binding item_uid}" Grid.Row="1" Width="{Binding title_width}" Background="#FFFFFFFF" Height="{Binding border_height}" BorderBrush="#FF931473" BorderThickness="2">
+                                            <i:Interaction.Triggers>
+                                                <i:EventTrigger EventName="MouseDown">
+                                                    <express:CallMethodAction TargetObject="{Binding}" MethodName="mouse_down"/>
+                                                </i:EventTrigger>
+                                            </i:Interaction.Triggers>
+                                        </Border>
+                                    </Grid>
+                                </Grid>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </Grid>
+                <Grid Width="1024" Height="638">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Border Grid.Column="{Binding Mouse_col, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="{Binding Mouse_colspan}" Grid.Row="{Binding Mouse_row, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.RowSpan="{Binding Mouse_rowspan}" Visibility="{Binding Mouse_vis}" Background="{Binding Mouse_color}" Width="{Binding Mouse_wi}" Height="{Binding Mouse_he}"/>
+                </Grid>
+            </Canvas>
+            <StackPanel Grid.Row="0" Width="1024" Visibility="{Binding Scr_vis}" Margin="0,10" Grid.RowSpan="2">
+                <Grid x:Name="grid" Height="658" RenderTransformOrigin="0.5,0.5">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Grid.Resources>
+                        <Storyboard x:Key="viewbig">
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                                <EasingDoubleKeyFrame KeyTime="0" Value="-10"/>
+                                <EasingDoubleKeyFrame KeyTime="0:0:0.25" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </Grid.Resources>
+                   <!-- <Grid.Style>
+                        <Style>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Selectitem}" Value="false">
+                                    <DataTrigger.EnterActions>
+                                        <BeginStoryboard Name="story3"  Storyboard="{StaticResource viewbig}"/>
+                                    </DataTrigger.EnterActions>
+                                     動畫 結束
+                                    <DataTrigger.ExitActions>
+                                        <RemoveStoryboard BeginStoryboardName="story3" />
+                                    </DataTrigger.ExitActions>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Grid.Style>-->
+                    <ItemsControl ItemsSource="{Binding Table}" AlternationCount="1" HorizontalAlignment="Left">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <Canvas/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Width="1024" Height="638">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid Grid.Column="{Binding col, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="{Binding row, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="{Binding title_width}" Grid.ColumnSpan="{Binding colspan}" Grid.RowSpan="{Binding rowspan}">
+                                        <i:Interaction.Triggers>
+                                            <i:EventTrigger EventName="MouseUp">
+                                                <express:CallMethodAction TargetObject="{Binding}" MethodName="mouse_up"/>
+                                            </i:EventTrigger>
+                                        </i:Interaction.Triggers>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <Border Width="{Binding title_width}" Height="25.36" CornerRadius="8,8,0,0" Background="#FF931473" Margin="0,6,0,0">
+                                            <StackPanel Orientation="Horizontal" Grid.Row="0" Width="{Binding title_width}" Height="25.36">
+                                                <Grid Width="{Binding title_width}" >
+                                                    <Label Content="{Binding item_title}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14" Padding="0" Foreground="White"/>
+                                                </Grid>
+                                            </StackPanel>
+                                        </Border>
+                                        <Border Grid.Row="1" Width="{Binding title_width}" Height="{Binding title_height}">
+                                            <ContentControl Content="{Binding Scr}"/>
+                                        </Border>
+                                    </Grid>
+                                </Grid>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </Grid>
+            </StackPanel>
+            <Canvas x:Name="canvas" Margin="799,0,0,0" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5">
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+                <Canvas.Resources>
+                    <Storyboard x:Key="biganimation">
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                            <EasingDoubleKeyFrame KeyTime="0" Value="202"/>
+                            <EasingDoubleKeyFrame KeyTime="0:0:0.25" Value="0"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                            <EasingDoubleKeyFrame KeyTime="0" Value="-0.667"/>
+                            <EasingDoubleKeyFrame KeyTime="0:0:0.25" Value="0"/>
+                        </DoubleAnimationUsingKeyFrames>
+                    </Storyboard>
+                    <Storyboard x:Key="smallanimation">
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                            <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                            <EasingDoubleKeyFrame KeyTime="0:0:0.25" Value="202.018"/>
+                        </DoubleAnimationUsingKeyFrames>
+                        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                            <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                            <EasingDoubleKeyFrame KeyTime="0:0:0.25" Value="-0.668"/>
+                        </DoubleAnimationUsingKeyFrames>
+                    </Storyboard>
+                </Canvas.Resources>
+                <Canvas.Style>
+                    <Style>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Selectitem}" Value="true">
+                                <DataTrigger.EnterActions>
+                                    <BeginStoryboard Name="story1"  Storyboard="{StaticResource biganimation}"/>
+                                </DataTrigger.EnterActions>
+                                <!-- 動畫 結束 -->
+                                <DataTrigger.ExitActions>
+                                    <RemoveStoryboard BeginStoryboardName="story1" />
+                                </DataTrigger.ExitActions>
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding Selectitem}" Value="false">
+                                <DataTrigger.EnterActions>
+                                    <BeginStoryboard Name="story2"  Storyboard="{StaticResource smallanimation}"/>
+                                </DataTrigger.EnterActions>
+                                <!-- 動畫 結束 -->
+                                <DataTrigger.ExitActions>
+                                    <RemoveStoryboard BeginStoryboardName="story2" />
+                                </DataTrigger.ExitActions>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Canvas.Style>
+                <Canvas Width="202" Height="658" Canvas.Left="23">
+                    <Border BorderThickness="1.5,1.5,0,1.5" BorderBrush="#FF90C31F" Width="202" Height="658" Background="White"/>
+                    <ScrollViewer Background="Transparent" HorizontalScrollBarVisibility="Auto" Width="198" Height="638" VerticalAlignment="Bottom" PanningMode="Both" Canvas.Left="4" Canvas.Top="10">
+                        <Grid Background="Transparent" Height="1000" Width="168">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.Resources>
+                                <Style TargetType="Label">
+                                    <Setter Property="Foreground" Value="#FF313131"/>
+                                    <Setter Property="FontSize" Value="16"/>
+                                    <Setter Property="HorizontalContentAlignment" Value="Left"/>
+                                    <Setter Property="VerticalContentAlignment" Value="Center"/>
+                                    <Setter Property="Width" Value="115"/>
+                                    <Setter Property="Margin" Value="0"/>
+                                    <Setter Property="Padding" Value="0"/>
+                                    <Setter Property="FontWeight" Value="Bold"/>
+                                    <Setter Property="BorderThickness" Value="0,0,0,1"/>
+                                    <Setter Property="BorderBrush" Value="#FFCCCCCC"/>
+                                </Style>
+                                <Style TargetType="Image">
+                                    <Setter Property="Margin" Value="0"/>
+                                    <Setter Property="Width" Value="45"/>
+                                </Style>
+                                <Style TargetType="StackPanel">
+                                    <Setter Property="Orientation" Value="Horizontal"/>
+                                </Style>
+                            </Grid.Resources>
+                            <StackPanel Background="{Binding Back0}" Grid.Row="0" Uid="0">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="MouseUp">
+                                        <express:CallMethodAction TargetObject="{Binding}" MethodName="mouseup"/>
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                                <Image Source="/usertable_wpf;component/Resources/51.png"/>
+                                <Grid Width="123">
+                                    <StackPanel Orientation="Vertical">
+                                        <Label Height="45" BorderThickness="0">
+                                            <TextBlock TextWrapping="Wrap" Text="{Binding Calen_title}"/>
+                                        </Label>
+                                        <Label Content="2*5"/>
+                                    </StackPanel>
+                                </Grid>
+                            </StackPanel>
+                            <StackPanel Background="{Binding Back1}" Grid.Row="1" Uid="1">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="MouseUp">
+                                        <express:CallMethodAction TargetObject="{Binding}" MethodName="mouseup"/>
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                                <Image Source="/usertable_wpf;component/Resources/8.png"/>
+                                <Grid Width="123">
+                                    <StackPanel Orientation="Vertical">
+                                        <Label Height="45" BorderThickness="0">
+                                            <TextBlock TextWrapping="Wrap" Text="{Binding Tool_title}"/>
+                                        </Label>
+                                        <Label Content="1*1"/>
+                                    </StackPanel>
+                                </Grid>
+                            </StackPanel>
+                            <StackPanel Background="{Binding Back2}" Grid.Row="2" Uid="2">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="MouseUp">
+                                        <express:CallMethodAction TargetObject="{Binding}" MethodName="mouseup"/>
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                                <Image Source="/usertable_wpf;component/Resources/990.png"/>
+                                <Grid Width="123">
+                                    <StackPanel Orientation="Vertical">
+                                        <Label Height="45" BorderThickness="0">
+                                            <TextBlock TextWrapping="Wrap" Text="{Binding Mach_rela}"/>
+                                        </Label>
+                                        <Label Content="1*3"/>
+                                    </StackPanel>
+                                </Grid>
+                            </StackPanel>
+                            <StackPanel Background="{Binding Back3}" Grid.Row="3" Uid="3">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="MouseUp">
+                                        <express:CallMethodAction TargetObject="{Binding}" MethodName="mouseup"/>
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                                <Image Source="/usertable_wpf;component/Resources/990.png"/>
+                                <Grid Width="123">
+                                    <StackPanel Orientation="Vertical">
+                                        <Label Height="45" BorderThickness="0">
+                                            <TextBlock TextWrapping="Wrap" Text="{Binding Rela_rema}"/>
+                                        </Label>
+                                        <Label Content="1*3"/>
+                                    </StackPanel>
+                                </Grid>
+                            </StackPanel>
+                            <StackPanel Background="{Binding Back4}" Grid.Row="4" Uid="4">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="MouseUp">
+                                        <express:CallMethodAction TargetObject="{Binding}" MethodName="mouseup"/>
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                                <Image Source="/usertable_wpf;component/Resources/9.png"/>
+                                <Grid Width="123">
+                                    <StackPanel Orientation="Vertical">
+                                        <Label Height="45" BorderThickness="0">
+                                            <TextBlock TextWrapping="Wrap" Text="{Binding Spin_title}"/>
+                                        </Label>
+                                        <Label Content="3*2"/>
+                                    </StackPanel>
+                                </Grid>
+                            </StackPanel>
+                            <StackPanel Background="{Binding Back5}" Grid.Row="5" Uid="5">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="MouseUp">
+                                        <express:CallMethodAction TargetObject="{Binding}" MethodName="mouseup"/>
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                                <Image Source="/usertable_wpf;component/Resources/17.png"/>
+                                <Grid Width="123">
+                                    <StackPanel Orientation="Vertical">
+                                        <Label Height="45" BorderThickness="0">
+                                            <TextBlock TextWrapping="Wrap" Text="{Binding Contdown_title}"/>
+                                        </Label>
+                                        <Label Content="2*2"/>
+                                    </StackPanel>
+                                </Grid>
+                            </StackPanel>
+                            <StackPanel Background="{Binding Back6}" Grid.Row="6" Uid="6">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="MouseUp">
+                                        <express:CallMethodAction TargetObject="{Binding}" MethodName="mouseup"/>
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                                <Image Source="/usertable_wpf;component/Resources/SF.png"/>
+                                <Grid Width="123">
+                                    <StackPanel Orientation="Vertical">
+                                        <Label Height="45" BorderThickness="0">
+                                            <TextBlock TextWrapping="Wrap" Text="S &amp; F"/>
+                                        </Label>
+                                        <Label Content="1*1"/>
+                                    </StackPanel>
+                                </Grid>
+                            </StackPanel>
+                            <StackPanel Background="{Binding Back7}" Grid.Row="7" Uid="7">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="MouseUp">
+                                        <express:CallMethodAction TargetObject="{Binding}" MethodName="mouseup"/>
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                                <Image Source="/usertable_wpf;component/Resources/5.png"/>
+                                <Grid Width="123">
+                                    <StackPanel Orientation="Vertical">
+                                        <Label Height="45" BorderThickness="0">
+                                            <TextBlock TextWrapping="Wrap" Text="{Binding Calu_title}"/>
+                                        </Label>
+                                        <Label Content="1*3"/>
+                                    </StackPanel>
+                                </Grid>
+                            </StackPanel>
+                            <StackPanel Background="{Binding Back8}" Grid.Row="8" Uid="8">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="MouseUp">
+                                        <express:CallMethodAction TargetObject="{Binding}" MethodName="mouseup"/>
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                                <Image Source="/usertable_wpf;component/Resources/33.png"/>
+                                <Grid Width="123">
+                                    <StackPanel Orientation="Vertical">
+                                        <Label Height="45" BorderThickness="0">
+                                            <TextBlock TextWrapping="Wrap" Text="{Binding Zdt_title}"/>
+                                        </Label>
+                                        <Label Content="3*3"/>
+                                    </StackPanel>
+                                </Grid>
+                            </StackPanel>
+                            <StackPanel Background="{Binding Back9}" Grid.Row="9" Uid="9">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="MouseUp">
+                                        <express:CallMethodAction TargetObject="{Binding}" MethodName="mouseup"/>
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                                <Image Source="/usertable_wpf;component/Resources/time.png"/>
+                                <Grid Width="123">
+                                    <StackPanel Orientation="Vertical">
+                                        <Label Height="45" BorderThickness="0">
+                                            <TextBlock TextWrapping="Wrap" Text="{Binding Time_title}"/>
+                                        </Label>
+                                        <Label Content="1*1"/>
+                                    </StackPanel>
+                                </Grid>
+                            </StackPanel>
+                            <StackPanel Background="{Binding Back10}" Grid.Row="10" Uid="10">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="MouseUp">
+                                        <express:CallMethodAction TargetObject="{Binding}" MethodName="mouseup"/>
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                                <Image Source="/usertable_wpf;component/Resources/Cycletime.png"/>
+                                <Grid Width="123">
+                                    <StackPanel Orientation="Vertical">
+                                        <Label Height="45" BorderThickness="0">
+                                            <TextBlock TextWrapping="Wrap" Text="Cycle Time"/>
+                                        </Label>
+                                        <Label Content="1*1"/>
+                                    </StackPanel>
+                                </Grid>
+                            </StackPanel>
+                            <StackPanel Background="{Binding Back11}" Grid.Row="11" Uid="11">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="MouseUp">
+                                        <express:CallMethodAction TargetObject="{Binding}" MethodName="mouseup"/>
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                                <Image Source="/usertable_wpf;component/Resources/13.png"/>
+                                <Grid Width="123">
+                                    <StackPanel Orientation="Vertical">
+                                        <Label Height="45" BorderThickness="0">
+                                            <TextBlock TextWrapping="Wrap" Text="{Binding Day_title}"/>
+                                        </Label>
+                                        <Label Content="5*1"/>
+                                    </StackPanel>
+                                </Grid>
+                            </StackPanel>
+                            <StackPanel Background="{Binding Back12}" Grid.Row="12" Uid="12">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="MouseUp">
+                                        <express:CallMethodAction TargetObject="{Binding}" MethodName="mouseup"/>
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                                <Image Source="/usertable_wpf;component/Resources/13.png"/>
+                                <Grid Width="123">
+                                    <StackPanel Orientation="Vertical">
+                                        <Label Height="45" BorderThickness="0">
+                                            <TextBlock TextWrapping="Wrap" Text="{Binding Day_title}"/>
+                                        </Label>
+                                        <Label Content="2*2"/>
+                                    </StackPanel>
+                                </Grid>
+                            </StackPanel>
+                            <StackPanel Background="{Binding Back13}" Grid.Row="13" Uid="13">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="MouseUp">
+                                        <express:CallMethodAction TargetObject="{Binding}" MethodName="mouseup"/>
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                                <Image Source="/usertable_wpf;component/Resources/31.png"/>
+                                <Grid Width="123">
+                                    <StackPanel Orientation="Vertical">
+                                        <Label Height="45" BorderThickness="0">
+                                            <TextBlock TextWrapping="Wrap" Text="{Binding Msg_title}"/>
+                                        </Label>
+                                        <Label Content="3*3"/>
+                                    </StackPanel>
+                                </Grid>
+                            </StackPanel>
+                            <StackPanel Background="{Binding Back14}" Grid.Row="14" Uid="14">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="MouseUp">
+                                        <express:CallMethodAction TargetObject="{Binding}" MethodName="mouseup"/>
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                                <Image Source="/usertable_wpf;component/Resources/4.png"/>
+                                <Grid Width="123">
+                                    <StackPanel Orientation="Vertical">
+                                        <Label Height="45" BorderThickness="0">
+                                            <TextBlock TextWrapping="Wrap" Text="{Binding Mcode_title}"/>
+                                        </Label>
+                                        <Label Content="2*2"/>
+                                    </StackPanel>
+                                </Grid>
+                            </StackPanel>
+                            <StackPanel Background="{Binding Back15}" Grid.Row="15" Uid="15">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="MouseUp">
+                                        <express:CallMethodAction TargetObject="{Binding}" MethodName="mouseup"/>
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                                <Image Source="/usertable_wpf;component/Resources/ACHead.png"/>
+                                <Grid Width="123">
+                                    <StackPanel Orientation="Vertical">
+                                        <Label Height="45" BorderThickness="0">
+                                            <TextBlock TextWrapping="Wrap" Text="A,C Head"/>
+                                        </Label>
+                                        <Label Content="1*1"/>
+                                    </StackPanel>
+                                </Grid>
+                            </StackPanel>
+                        </Grid>
+                    </ScrollViewer>
+                </Canvas>
+                <Border Width="23" Height="46">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="PreviewMouseUp">
+                            <express:CallMethodAction TargetObject="{Binding}" MethodName="add_click"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    <Button>
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Grid VerticalAlignment="Top" Height="46">
+                                    <Path Data="M39.464999,0 L39.465001,79.273003 39.464999,79.270836 38.613463,79.260056 C17.195639,78.71743 0,61.185089 0,39.636501 0,18.087906 17.195639,0.55557019 38.613463,0.012945426 L39.464999,0.0021699741 z" Fill="#FF313131" HorizontalAlignment="Left" Height="46" Margin="3.089,0,0,0" Stretch="Fill" VerticalAlignment="Top" Width="19.911"/>
+                                    <Rectangle Margin="6,17,1,27" Fill="White"/>
+                                    <Rectangle Margin="6,23,1,21" Fill="White"/>
+                                    <Rectangle Margin="6,29,1,15" Fill="White"/>
+                                </Grid>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </Border>
+            </Canvas>
+        </Grid>
+        <message:MessageBox x:Name="MyMessageBox"/>
+    </Grid>
+</UserControl>

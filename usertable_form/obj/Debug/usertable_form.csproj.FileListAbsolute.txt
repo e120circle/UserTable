@@ -1,0 +1,13 @@
+D:\Hartford\2017自訂桌面\usertable\usertable_form\bin\Debug\usertable_form.exe
+D:\Hartford\2017自訂桌面\usertable\usertable_form\bin\Debug\usertable_form.pdb
+D:\Hartford\2017自訂桌面\usertable\usertable_form\obj\Debug\usertable_form.csprojResolveAssemblyReference.cache
+D:\Hartford\2017自訂桌面\usertable\usertable_form\obj\Debug\usertable_form.Form1.resources
+D:\Hartford\2017自訂桌面\usertable\usertable_form\obj\Debug\usertable_form.Properties.Resources.resources
+D:\Hartford\2017自訂桌面\usertable\usertable_form\obj\Debug\usertable_form.csproj.GenerateResource.Cache
+D:\Hartford\2017自訂桌面\usertable\usertable_form\obj\Debug\usertable_form.exe
+D:\Hartford\2017自訂桌面\usertable\usertable_form\obj\Debug\usertable_form.pdb
+D:\Hartford\2017自訂桌面\usertable\usertable_form\bin\Debug\NCLinker.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_form\bin\Debug\NCLinker2.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_form\bin\Debug\usertable_wpf.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_form\bin\Debug\ds_API_SqlClass.dll
+D:\Hartford\2017自訂桌面\usertable\usertable_form\bin\Debug\usertable_wpf.pdb

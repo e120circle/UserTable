@@ -1,0 +1,49 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:usertable_wpf.View" x:Class="usertable_wpf.View.cycletime" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300" Width="198.8" Height="95.4">
+    <Grid Background="#FFF0F0F0" Width="198.8" Height="95.4" >
+        <Grid Width="198.8">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="0.25*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="0.25*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Canvas Grid.Column="0">
+                <local:digital x:Name="H_A" Height="95" Width="31"/>
+            </Canvas>
+            <Canvas Grid.Column="1">
+                <local:digital x:Name="H_B" Height="95" Width="31"/>
+            </Canvas>
+            <Canvas Grid.Column="2" Margin="0,0,0,0.4">
+                <Ellipse Fill="#FF90C31F" Height="6" Canvas.Top="31" Width="5" Canvas.Left="1"/>
+                <Ellipse Fill="#FF90C31F" Height="6" Canvas.Top="52" Width="5" Canvas.Left="1"/>
+            </Canvas>
+            <Canvas Grid.Column="3">
+                <local:digital x:Name="M_A" Height="95" Width="31"/>
+            </Canvas>
+            <Canvas Grid.Column="4">
+                <local:digital x:Name="M_B" Height="95" Width="31"/>
+            </Canvas>
+            <Canvas Grid.Column="5" Margin="0,0,0,0.4">
+                <Ellipse Fill="#FF90C31F" Height="6" Canvas.Top="31" Width="5" Canvas.Left="1"/>
+                <Ellipse Fill="#FF90C31F" Height="6" Canvas.Top="52" Width="5" Canvas.Left="1"/>
+            </Canvas>
+            <Canvas Grid.Column="6">
+                <local:digital x:Name="S_A" Height="95" Width="31"/>
+            </Canvas>
+            <Canvas Grid.Column="7">
+                <local:digital x:Name="S_B" Height="95" Width="31"/>
+            </Canvas>
+        </Grid>
+    </Grid>
+</UserControl>

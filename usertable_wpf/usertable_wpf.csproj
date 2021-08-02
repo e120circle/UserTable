@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4228301C-70DA-444A-BC99-790B1C264BC0}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>usertable_wpf</RootNamespace>
+    <AssemblyName>usertable_wpf</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bugatti, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bugatti.dll</HintPath>
+    </Reference>
+    <Reference Include="ds_API_SqlClass, Version=2.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ds_API_SqlClass.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Microsoft.Expression.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Interactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="NCLinker">
+      <HintPath>..\NCLinker.dll</HintPath>
+    </Reference>
+    <Reference Include="NCLinker2">
+      <HintPath>..\NCLinker2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UserRemindSumit">
+      <HintPath>..\UserRemindSumit.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACHead_1_1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ACHead_1_1.Designer.cs">
+      <DependentUpon>ACHead_1_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="coord1_3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="coord1_3.Designer.cs">
+      <DependentUpon>coord1_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cycletime_1_1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="cycletime_1_1.Designer.cs">
+      <DependentUpon>cycletime_1_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="feed1_1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="feed1_1.Designer.cs">
+      <DependentUpon>feed1_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ACHead_model.cs" />
+    <Compile Include="Model\cycletime_model.cs" />
+    <Compile Include="Model\feed1_1_model.cs" />
+    <Compile Include="Model\mach_model.cs" />
+    <Compile Include="Model\main_model.cs" />
+    <Compile Include="Model\prog_model.cs" />
+    <Compile Include="Model\time_model.cs" />
+    <Compile Include="prog1_3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="prog1_3.Designer.cs">
+      <DependentUpon>prog1_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="time_1_1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="time_1_1.Designer.cs">
+      <DependentUpon>time_1_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usertable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usertable.Designer.cs">
+      <DependentUpon>usertable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewmodel\ACHead_viewmodel.cs" />
+    <Compile Include="Viewmodel\cycletime_viewmodel.cs" />
+    <Compile Include="Viewmodel\digital_viewmodel.cs" />
+    <Compile Include="Viewmodel\feed1_1_viewmodel.cs" />
+    <Compile Include="Viewmodel\prog_viewmodel.cs" />
+    <Compile Include="Viewmodel\time_viewmodel.cs" />
+    <Compile Include="View\ACHead.xaml.cs">
+      <DependentUpon>ACHead.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\cycletime.xaml.cs">
+      <DependentUpon>cycletime.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\digital.xaml.cs">
+      <DependentUpon>digital.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\feed1_1.xaml.cs">
+      <DependentUpon>feed1_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\prog_coord.xaml.cs">
+      <DependentUpon>prog_coord.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\time.xaml.cs">
+      <DependentUpon>time.xaml</DependentUpon>
+    </Compile>
+    <Page Include="View\ACHead.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\cycletime.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\digital.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\feed1_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\mach_coord.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\main_window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Viewmodel\mach_viewmodel.cs" />
+    <Compile Include="Viewmodel\main_viewmodel.cs" />
+    <Compile Include="View\mach_coord.xaml.cs">
+      <DependentUpon>mach_coord.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\main_window.xaml.cs">
+      <DependentUpon>main_window.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="View\prog_coord.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\time.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="coord1_3.resx">
+      <DependentUpon>coord1_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="feed1_1.resx">
+      <DependentUpon>feed1_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usertable.resx">
+      <DependentUpon>usertable.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\move.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\990.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\close2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Time.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Cycletime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\SF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ACHead.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
